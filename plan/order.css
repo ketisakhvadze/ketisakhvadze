@@ -1,0 +1,139 @@
+:root {
+    --cyan: #0E8784;
+    --darker-cyan: #052b2c;
+    --grey: #9c9e9e;
+    --dark-grey: #333D4B;
+    --light-grey: #bec5c5;
+    --coffee-brown: #fdd6ba;
+    --white: #f0f1f1;
+  }
+
+.order{
+    width: min(960px, 100%);
+    padding: 0;
+    margin-bottom: 15rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.side-bar{
+    position: sticky;
+    top: 5rem;
+    align-self: start;
+}
+.order-step{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.order-step span{
+    color: var(--grey);
+    font-size: 1.4rem;
+    font-family: "Fraunces", serif;
+
+}
+.order-step::after{
+    content: "";
+    position: absolute;
+    background-color: var(--light-grey);
+    bottom: 0;
+    left: 0;
+    width: 13rem;
+    height: 1px;
+}
+ul li:last-child .order-step::after{
+    display: none;
+}
+.order-step span{
+    margin-right: 1rem;
+}
+
+.order-options{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "head head head"
+    "card card card";
+    column-gap: 1.5rem;
+}
+.order-option-title{
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.toggler {
+    width: 1.3rem;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.toggler-rotated{
+    transform: rotate(180deg);
+}
+.order-options h1{
+    color: var(--grey);
+}
+.order-cards{
+    grid-area: card;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+    max-height: 500px;
+    transition: 0.3s;
+}
+.collapsed{
+    max-height: 0;
+    margin-bottom: 0;
+}
+.order-card{
+    background-color: var(--white);
+    margin-bottom: 0;
+    padding: 2rem 1.5rem 5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.order-card h3{
+    margin-bottom: 1rem;
+}
+.order-card p{
+    color: var(--dark-grey);
+}
+.order-card-selected{
+    background-color: var(--cyan);
+    color: white;
+}
+.order-card-selected p{
+    color: var(--white);
+}
+
+.order-summary{
+    background-image: url("/plan/bg-order-summary.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2;
+    padding: 2rem 3rem;
+    margin-bottom: 3rem;
+}
+.order-summary h4{
+    color: var(--grey);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.order-summary h3{ 
+    color: white;
+    line-height: 1.6;
+}
+.order-summary span{
+    color:var(--cyan);
+}
+#using-or-as{
+    color: white;
+}
+.plan-btn{
+    width: auto;
+    justify-self: right;
+    grid-column: 2;
+}
