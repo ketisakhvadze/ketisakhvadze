@@ -1,0 +1,36 @@
+:root {
+    --cyan: #0E8784;
+    --darker-cyan: #052b2c;
+    --grey: #9c9e9e;
+    --dark-grey: #333D4B;
+    --light-grey: #bec5c5;
+    --coffee-brown: #fdd6ba;
+    --white: #f0f1f1;
+}
+
+.intro-bg{
+    background-image: url("/plan/image-hero-blackcup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 8rem 5.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+.intro-title{
+    color: var(--white);
+    max-width: 10ch;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 4rem;
+}
+.intro-para{
+    color: var(--light-grey);
+    max-width: 45ch;
+}

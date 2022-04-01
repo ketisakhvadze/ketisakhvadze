@@ -1,0 +1,30 @@
+:root {
+    --cyan: #0E8784;
+    --darker-cyan: #052b2c;
+    --grey: #9c9e9e;
+    --dark-grey: #333D4B;
+    --light-grey: #bec5c5;
+    --coffee-brown: #fdd6ba;
+    --white: #f0f1f1;
+}
+.procedure, .bullet{
+    background-image: url("/plan/bg-steps.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.procedure {
+    margin-top: 10rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 5rem 5.5rem;
+}
+.bullet{
+    background-size: auto;
+}
+.procedure-cards{
+    margin: 0;
+}
+
+.procedure-card h3{
+    color: var(--white);
+}
