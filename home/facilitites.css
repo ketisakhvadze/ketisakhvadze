@@ -1,0 +1,72 @@
+:root {
+    --cyan: #0E8784;
+    --darker-cyan: #052b2c;
+    --grey: #9c9e9e;
+    --dark-grey: #333D4B;
+    --light-grey: #bec5c5;
+    --coffee-brown: #fdd6ba;
+    --white: #f0f1f1;
+}
+.facilities{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+.facility-intro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
+.facility-background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: max(150%, 30rem);
+    border-radius: 0.5rem;
+    z-index: -1;
+}
+.facility-intro h3{
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;;
+}
+.facility-intro p{
+    color: var(--grey);
+    width: 61ch;
+    max-width: 80%;
+}
+.facility-cards{
+    display: flex;
+    margin: 0 auto;
+    width: 60rem;
+    gap: 1rem;
+}
+.facility-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    background-color: var(--cyan);
+}
+.facility-cards *{
+    margin-bottom:1rem;
+}
+.facility-img{
+    height: 50%;
+}
+.facility-card h3{
+    color: var(--white);
+}
+.facility-card p{
+    color: var(--light-grey);
+}

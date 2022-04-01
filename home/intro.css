@@ -1,0 +1,26 @@
+:root {
+    --intro-bg: url(/home/image-hero-coffeepress.jpg);
+}
+.intro-bg{
+    background-image: var(--intro-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 7rem 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.intro-title{
+    color: white;
+    max-width: 10ch;
+    font-size: 64px;
+    line-height: 64px;
+    margin-bottom: 2rem;
+}
+.intro-para{
+    color: grey;
+    max-width: 45ch;
+    margin-bottom: 64px;
+}
