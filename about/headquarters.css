@@ -1,0 +1,43 @@
+:root {
+    --cyan: #0E8784;
+    --darker-cyan: #052b2c;
+    --grey: #9c9e9e;
+    --dark-grey: #333D4B;
+    --light-grey: #bec5c5;
+    --coffee-brown: #fdd6ba;
+    --white: #f0f1f1;
+}
+.headquarters{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "title title title"
+    "card1 card2 card3";
+    gap: 2rem;
+    width: 100%;
+    padding: 10rem 5rem;
+}
+.headquarters-title{
+    grid-area: title;
+    color: var(--grey);
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+.country{
+    color: var(--darker-cyan);
+}
+.h1{
+    grid-area: card1;
+}
+.h2{
+    grid-area: card2;
+}
+.h3{
+    grid-area: card3;
+}
+.headquarter img{
+    margin-bottom: 2rem;
+}
+.headquarter h1{
+    margin-bottom: 1.5rem;
+}

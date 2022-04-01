@@ -1,0 +1,34 @@
+:root {
+    --cyan: #0E8784;
+    --darker-cyan: #052b2c;
+    --grey: #9c9e9e;
+    --dark-grey: #333D4B;
+    --light-grey: #bec5c5;
+    --coffee-brown: #fdd6ba;
+    --white: #f0f1f1;
+}
+.quality{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url("/about/bg-quality.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+}
+.quality div{
+    margin-bottom: 5rem;
+}
+.quality-title{
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+.quality-img{
+    max-width: 100%;
+    height: 26rem;
+    border-radius: 0.5rem;
+    margin-top: -9rem;
+    margin-left: auto;
+}

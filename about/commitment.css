@@ -1,0 +1,36 @@
+:root {
+    --cyan: #0E8784;
+    --darker-cyan: #052b2c;
+    --grey: #9c9e9e;
+    --dark-grey: #333D4B;
+    --light-grey: #bec5c5;
+    --coffee-brown: #fdd6ba;
+    --white: #f0f1f1;
+}
+.commitment{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10rem 5rem;
+    gap: 5rem;
+}
+.commitment-img{
+    background-image: url("/about/image-commitment.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20rem;
+    height: 30rem;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+.commitment-text{
+    align-self: center;
+}
+.commitment-title{
+    margin-bottom: 2.5rem;
+    color: var(--darker-cyan);
+}
+.commitment-para{
+    color: var(--grey);
+    
+}
